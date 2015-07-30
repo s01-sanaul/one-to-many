@@ -1,0 +1,22 @@
+<h1>Bookmark #<%= @bookmark.id %></h1>
+
+<div>
+  <strong>Name</strong>:<br />
+  <p><%= @bookmark.name %></p>
+</div>
+<div>
+  <strong>Url</strong>:<br />
+  <p><%= @bookmark.url %></p>
+</div>
+<div>
+  <strong>About</strong>:<br />
+  <p><%= @bookmark.about %></p>
+</div>
+<div>
+  <strong>User</strong>:<br />
+  <p><a href = "/users/<%= @user.id %>"><%= @user.name %></a></p><br>
+</div>
+
+<a href="/bookmarks/<%= @bookmark.id %>/edit">Edit</a> |
+<a href="/bookmarks/<%= @bookmark.id %>/destroy">Destroy</a> |
+<a href="/new_bookmark">New</a>
